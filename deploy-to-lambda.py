@@ -35,4 +35,4 @@ if(os.path.isfile("requirements.txt")):
   shutil.copy("requirements.txt", app_name)
 
 os.chdir(app_name)
-print subprocess.Popen("lambda-deploy deploy ", shell=True, stdout=subprocess.PIPE).stdout.read()  
+print subprocess.Popen("lambda-deploy deploy", shell=True, stdout=subprocess.PIPE).stdout.read()  
